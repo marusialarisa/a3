@@ -7,5 +7,6 @@ $config=[
 		$dsn=$config['dsn'];
 		$user=$config['user'];
 		$pwd=$config['pwd'];
+		
 
 ?>

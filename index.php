@@ -41,8 +41,9 @@ if($stmt->rowCount()==1){ //si hay un usuario
 	//hemos encontrado el usuario
 	///establecer variables de sesion  y redirigir
 	$_SESSION['user']=$user; //guardamos user con el nombre de usuario
+		setcookie('user',$user,time()+365*24*60*60,'/','localhost',0); 
 	header("Location: public/index2.php"); //redirection a otro script
-		setcookie('user','$user',time()+365*24*60*60,'/','localhost',0); 
+	
 }
 }
 
